@@ -1,6 +1,7 @@
 function insertionSort(array) {
-    for (let i = 0; i < array.length - 1; i++) {
-        let temp = array[i];
+    let temp;
+    for (let i = 1; i < array.length; i++) {
+        temp = array[i];
         for (var j = i - 1; array[j] > temp && j > -1; j--) {
             array[j + 1] = array[j];
         }
