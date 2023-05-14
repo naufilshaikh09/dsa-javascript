@@ -21,6 +21,7 @@ class Stack {
             this.top = newNode;
         }
         this.length++;
+        return this;
     }
 
     pop() {
@@ -37,7 +38,4 @@ class Stack {
 
 let myStack = new Stack(1);
 myStack.push(2);
-myStack.push(3);
-myStack.push(4);
-myStack.pop();
 console.log(myStack);
